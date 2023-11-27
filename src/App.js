@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const [stockSymbol, setStockSymbol] = useState("FB");
+  const [stockSymbol, setStockSymbol] = useState("AAPL");
   return (
     <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
       <StockContext.Provider value={{ stockSymbol, setStockSymbol }}>
