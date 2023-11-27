@@ -13,7 +13,7 @@ export const searchSymbols = async (query) => {
 };
 
 export const fetchStockDetails = async (stockSymbol) => {
-  const url = `${basePath}/stock/profile?symbol=${stockSymbol}&token=${process.env.REACT_APP_API_KEY}`;
+  const url = `${basePath}/stock/profile2?symbol=${stockSymbol}&token=${process.env.REACT_APP_API_KEY}`;
   const response = await fetch(url);
 
   if (!response.ok) {
