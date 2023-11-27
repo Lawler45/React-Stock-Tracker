@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import { mockSearchResults } from "../constants/mock";
 import { XIcon, SearchIcon } from "@heroicons/react/outline";
 import SearchResults from "./SearchResults";
 import ThemeContext from "../context/ThemeContext";
@@ -24,7 +23,7 @@ const Search = () => {
         setBestMatches(result);
       }
     } catch (error) {
-      setBestMatches({});
+      setBestMatches([]);
       console.log(error);
     }
   };
