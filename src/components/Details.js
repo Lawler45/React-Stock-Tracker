@@ -38,7 +38,6 @@ const Details = ({ details }) => {
             </li>
           );
         })}
-        ;
       </ul>
     </Card>
   );
