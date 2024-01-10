@@ -1,5 +1,6 @@
 const basePath = "https://finnhub.io/api/v1";
 
+
 export const searchSymbols = async (query) => {
   const url = `${basePath}/search?q=${query}&token=${process.env.REACT_APP_API_KEY}`;
   const response = await fetch(url);
@@ -35,6 +36,8 @@ export const fetchQuote = async (stockSymbol) => {
 
   return await response.json();
 };
+
+//this no longer is supported in the free finnhub, need to find another api
 
 export const fetchHistoricalData = async (
   stockSymbol,
